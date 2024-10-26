@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>API Parameter Table</title>
+  <style>
+    body {
+      font-family: sans-serif;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-bottom: 20px;
+    }
+
+    th, td {
+      text-align: left;
+      padding: 8px;
+      border: 1px solid #ddd;
+    }
+
+    th {
+      background-color: #f2f2f2;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>API Parameter Table</h1>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Param</th>
+        <th>Example Value</th>
+        <th>Type</th>
+        <th>Optional</th>
+        <th>Generally Used With</th>
+        <th>Value/Values Can Be</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>page</td>
+        <td>1</td>
+        <td>number</td>
+        <td>yes</td>
+        <td>limit</td>
+        <td>1, 2, 3, ...</td>
+      </tr>
+      <tr>
+        <td>limit</td>
+        <td>5</td>
+        <td>number</td>
+        <td>yes</td>
+        <td>page</td>
+        <td>1, 2, ..., 40</td>
+      </tr>
+      <tr>
+        <td>sort</td>
+        <td>price</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>order</td>
+        <td>price</td>
+      </tr>
+      <tr>
+        <td>order</td>
+        <td>desc</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>sort</td>
+        <td>asc, desc</td>
+      </tr>
+      <tr>
+        <td>filter</td>
+        <td>men</td>
+        <td>string</td>
+        <td>yes</td>
+        <td>It's a standalone param (works alone without requiring any additional param)</td>
+        <td>men, women, kids, homedecor</td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>
